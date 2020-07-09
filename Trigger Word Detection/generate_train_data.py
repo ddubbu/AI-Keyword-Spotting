@@ -126,7 +126,7 @@ def insert_ones(Ty, y, segment_end_ms):
 
 # GRADED FUNCTION: create_training_example
 
-def create_training_example(Ty, background, activates, negatives):
+def create_training_example(Ty, backgrounds, activates, negatives):
     """
     Creates a training example with a given background, activates, and negatives.
 
@@ -141,10 +141,7 @@ def create_training_example(Ty, background, activates, negatives):
     """
 
     # Set the random seed
-    np.random.seed(18)
-
-    # Make background quieter
-    background = background - 20  # ★ 왜?
+    # np.random.seed(18) ^^ 너때문에 random은 커녕 계속 같은 값이 나오잖니?
 
     # Step 1: Initialize y (label vector) of zeros (≈ 1 line)
     y = np.zeros((1, Ty))
@@ -152,14 +149,19 @@ def create_training_example(Ty, background, activates, negatives):
     # Step 2: Initialize segment times as empty list (≈ 1 line)
     previous_segments = []
 
-
+    # Step 3: # Select 0-1 random "background" audio clips from the entire list of "backgrounds" recordings
+    random_indices = np.random.randint(len(backgrounds))
+    print(random_indices)
+    background = backgrounds[random_indices]
+    # Make background quieter
+    background = background - 20  # ★ 왜?
 
     # Select 0-4 random "activate" audio clips from the entire list of "activates" recordings
     number_of_activates = 1  # ★★★ 한개만 넣자  //np.random.randint(0, 5)
     random_indices = np.random.randint(len(activates), size=number_of_activates)
     random_activates = [activates[i] for i in random_indices]
 
-    # Step 3: Loop over randomly selected "activate" clips and insert in background
+    # Step 4: Loop over randomly selected "activate" clips and insert in background
     for random_activate in random_activates:
         # Insert the audio clip on the background
         background, segment_time = insert_audio_clip(background, random_activate, previous_segments)
@@ -174,7 +176,7 @@ def create_training_example(Ty, background, activates, negatives):
     random_indices = np.random.randint(len(negatives), size=number_of_negatives)
     random_negatives = [negatives[i] for i in random_indices]
 
-    # Step 4: Loop over randomly selected negative clips and insert in background
+    # Step 5: Loop over randomly selected negative clips and insert in background
     for random_negative in random_negatives:
         # Insert the audio clip on the background
         background, n_segment_time = insert_audio_clip(background, random_negative, previous_segments)

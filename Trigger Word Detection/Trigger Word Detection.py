@@ -72,6 +72,6 @@ activates, negatives, backgrounds = load_raw_audio()
 # x = graph_spectrogram("train.wav")
 
 
-file_name, y = create_training_example(Ty, backgrounds[0], activates, negatives)
-print("create complete! :", file_name)
+file_name, y = create_training_example(Ty, backgrounds, activates, negatives)
+# print("create complete! :", file_name)
 
