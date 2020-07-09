@@ -72,17 +72,19 @@ activates, negatives, backgrounds = load_raw_audio()
 
 # x = graph_spectrogram("train.wav")
 
+
+# x, y = create_training_example(Ty, backgrounds, activates, negatives, num)  # num : 파일 번호
+#
+# print(y)
+# plt.figure()
+# plt.plot(y[0])
+# plt.show()
+
 # make x,y dataset
-x, y = create_training_example(Ty, backgrounds, activates, negatives)
-
-print(y)
-plt.figure()
-plt.plot(y[0])
-plt.show()
-
+create_training_examples(Ty, 20)
 
 '''
 4. Full Training set
 Load preprocessed training examples
 '''
-X = np.load("./XY_train/X.npy")
+# X = np.load("./XY_train/X.npy")

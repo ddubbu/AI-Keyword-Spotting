@@ -124,9 +124,7 @@ def insert_ones(Ty, y, segment_end_ms):
     return y
 
 
-# GRADED FUNCTION: create_training_example
-
-def create_training_example(Ty, backgrounds, activates, negatives):
+def create_training_example(Ty, backgrounds, activates, negatives, file_num):
     """
     Creates a training example with a given background, activates, and negatives.
 
@@ -143,6 +141,7 @@ def create_training_example(Ty, backgrounds, activates, negatives):
     # Set the random seed
     # np.random.seed(18) ^^ 너때문에 random은 커녕 계속 같은 값이 나오잖니?
 
+    print("file num:", file_num)
     # Step 1: Initialize y (label vector) of zeros (≈ 1 line)
     y = np.zeros((1, Ty))
 
@@ -151,7 +150,6 @@ def create_training_example(Ty, backgrounds, activates, negatives):
 
     # Step 3: # Select 0-1 random "background" audio clips from the entire list of "backgrounds" recordings
     random_indices = np.random.randint(len(backgrounds))
-    print(random_indices)
     background = backgrounds[random_indices]
     # Make background quieter
     background = background - 20  # ★ 왜?
@@ -186,7 +184,7 @@ def create_training_example(Ty, backgrounds, activates, negatives):
     background = match_target_amplitude(background, -20.0)  # ★
 
     # Export new training example
-    file_name = "./generate_data/train" + ".wav"
+    file_name = "./generate_data/train" + str(file_num) + ".wav"
     file_handle = background.export(file_name, format="wav")
     print("File was saved in ./generate_data directory.")
 
@@ -194,3 +192,24 @@ def create_training_example(Ty, backgrounds, activates, negatives):
     x = graph_spectrogram(file_name)
 
     return x, y
+
+
+def create_training_examples(Ty, num_new_data):
+    """
+    It creates the whole training data
+    and saves it in X.npy and Y.npy.
+    """
+    # Load audio segments
+    activates, negatives, backgrounds = load_raw_audio()
+    X = []
+    Y = []
+    for i in range(num_new_data):
+        x, y = create_training_example(Ty, backgrounds, activates, negatives, i)
+        X.append(x.T)
+        Y.append(y.T)
+    X = np.array(X)
+    Y = np.array(Y)
+    np.save(file='./XY_train/X_train.npy', arr=X)
+    np.save(file='./XY_train/Y_train.npy', arr=Y)
+
+    print("The end of making # of", num_new_data, "new training audios")
