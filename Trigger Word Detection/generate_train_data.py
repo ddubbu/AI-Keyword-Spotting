@@ -169,6 +169,7 @@ def create_training_example(Ty, backgrounds, activates, negatives):
         # Retrieve segment_start and segment_end from segment_time
         segment_start, segment_end = segment_time
         # Insert labels in "y"
+        # y = insert_ones(Ty, y, segment_start)
         y = insert_ones(Ty, y, segment_end)
 
     # Select 0-2 random negatives audio recordings from the entire list of "negatives" recordings
@@ -192,4 +193,4 @@ def create_training_example(Ty, backgrounds, activates, negatives):
     # Get and plot spectrogram of the new recording (background with superposition of positive and negatives)
     x = graph_spectrogram(file_name)
 
-    return file_name, y  # x,
+    return x, y

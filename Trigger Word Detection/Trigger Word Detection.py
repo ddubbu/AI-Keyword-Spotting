@@ -61,7 +61,8 @@ A. simple by pydub.overlay function
 정확히 어떤 keyword가 / 어디에 있는지까지
 2가지 정보를 학습하고 싶고
 
-Q. y output=1 50 step인 이유는??
+Q. y output=1 50 step인 이유는?? 
+    y가 무엇이기에.. 0~1400 까지 x-axis를 갖고 있는가..
 '''
 
 # Load audio segments using pydub
@@ -71,7 +72,17 @@ activates, negatives, backgrounds = load_raw_audio()
 
 # x = graph_spectrogram("train.wav")
 
+# make x,y dataset
+x, y = create_training_example(Ty, backgrounds, activates, negatives)
 
-file_name, y = create_training_example(Ty, backgrounds, activates, negatives)
-# print("create complete! :", file_name)
+print(y)
+plt.figure()
+plt.plot(y[0])
+plt.show()
 
+
+'''
+4. Full Training set
+Load preprocessed training examples
+'''
+X = np.load("./XY_train/X.npy")
