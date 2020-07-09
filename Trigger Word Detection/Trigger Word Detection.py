@@ -1,4 +1,3 @@
-import numpy as np
 from pydub import AudioSegment
 import random
 import sys
@@ -6,7 +5,10 @@ import io
 import os
 import glob
 # import IPython
+import numpy as np
+import matplotlib.pyplot as plt
 from wav_tools import *  # 빨간 밑줄 상관 없음.
+from generate_train_data import *
 
 '''
 1. Listening to the data : 그냥 self로 들음. 
@@ -46,8 +48,9 @@ which are 0~4s, 0~2s, 10s
 + 어차피 background에 insert 되는거라 상관없을 거 같긴 한데, 
 activate/negative sounds doesn't have silence.
 
-Q. How to insert? ★★★
-A. randomly pick the each data 
+Q. How to insert? 
+A. simple by pydub.overlay function
+    randomly pick the each data 
     overlaying positive/negative words onto the background.
     So, it is 10s based backgrounds data.
     
@@ -62,9 +65,13 @@ Q. y output=1 50 step인 이유는??
 '''
 
 # Load audio segments using pydub
-activates, negatives, backrounds = load_raw_audio()
+activates, negatives, backgrounds = load_raw_audio()
+
+# Create training example
+
+# x = graph_spectrogram("train.wav")
 
 
-
-
+file_name, y = create_training_example(Ty, backgrounds[0], activates, negatives)
+print("create complete! :", file_name)
 
