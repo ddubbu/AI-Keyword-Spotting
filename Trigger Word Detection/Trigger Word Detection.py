@@ -81,6 +81,7 @@ activates, negatives, backgrounds = load_raw_audio()
 # plt.show()
 
 # make x,y dataset
+create_test_examples(Ty)
 create_training_examples(Ty, 20)
 
 '''

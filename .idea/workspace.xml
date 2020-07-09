@@ -4,8 +4,55 @@
     <list default="true" id="a5fd2c34-61ec-4a67-9ca7-5710a2959b7e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Trigger Word Detection/Trigger Word Detection.py" beforeDir="false" afterPath="$PROJECT_DIR$/Trigger Word Detection/Trigger Word Detection.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Trigger Word Detection/XY_train/X.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Trigger Word Detection/XY_train/Y.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Trigger Word Detection/XY_train/X_train.npy" beforeDir="false" afterPath="$PROJECT_DIR$/Trigger Word Detection/XY_train/X_train.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Trigger Word Detection/XY_train/Y_train.npy" beforeDir="false" afterPath="$PROJECT_DIR$/Trigger Word Detection/XY_train/Y_train.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Trigger Word Detection/copy_generate_data/train0.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Trigger Word Detection/copy_generate_data/train1.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Trigger Word Detection/copy_generate_data/train10.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Trigger Word Detection/copy_generate_data/train11.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Trigger Word Detection/copy_generate_data/train12.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Trigger Word Detection/copy_generate_data/train13.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Trigger Word Detection/copy_generate_data/train14.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Trigger Word Detection/copy_generate_data/train15.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Trigger Word Detection/copy_generate_data/train16.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Trigger Word Detection/copy_generate_data/train17.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Trigger Word Detection/copy_generate_data/train18.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Trigger Word Detection/copy_generate_data/train19.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Trigger Word Detection/copy_generate_data/train2.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Trigger Word Detection/copy_generate_data/train20.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Trigger Word Detection/copy_generate_data/train21.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Trigger Word Detection/copy_generate_data/train22.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Trigger Word Detection/copy_generate_data/train23.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Trigger Word Detection/copy_generate_data/train24.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Trigger Word Detection/copy_generate_data/train25.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Trigger Word Detection/copy_generate_data/train3.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Trigger Word Detection/copy_generate_data/train4.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Trigger Word Detection/copy_generate_data/train5.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Trigger Word Detection/copy_generate_data/train6.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Trigger Word Detection/copy_generate_data/train7.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Trigger Word Detection/copy_generate_data/train8.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Trigger Word Detection/copy_generate_data/train9.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Trigger Word Detection/generate_data/train.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Trigger Word Detection/generate_data/train0.wav" beforeDir="false" afterPath="$PROJECT_DIR$/Trigger Word Detection/generate_data/train0.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Trigger Word Detection/generate_data/train1.wav" beforeDir="false" afterPath="$PROJECT_DIR$/Trigger Word Detection/generate_data/train1.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Trigger Word Detection/generate_data/train10.wav" beforeDir="false" afterPath="$PROJECT_DIR$/Trigger Word Detection/generate_data/train10.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Trigger Word Detection/generate_data/train11.wav" beforeDir="false" afterPath="$PROJECT_DIR$/Trigger Word Detection/generate_data/train11.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Trigger Word Detection/generate_data/train12.wav" beforeDir="false" afterPath="$PROJECT_DIR$/Trigger Word Detection/generate_data/train12.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Trigger Word Detection/generate_data/train13.wav" beforeDir="false" afterPath="$PROJECT_DIR$/Trigger Word Detection/generate_data/train13.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Trigger Word Detection/generate_data/train14.wav" beforeDir="false" afterPath="$PROJECT_DIR$/Trigger Word Detection/generate_data/train14.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Trigger Word Detection/generate_data/train15.wav" beforeDir="false" afterPath="$PROJECT_DIR$/Trigger Word Detection/generate_data/train15.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Trigger Word Detection/generate_data/train16.wav" beforeDir="false" afterPath="$PROJECT_DIR$/Trigger Word Detection/generate_data/train16.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Trigger Word Detection/generate_data/train17.wav" beforeDir="false" afterPath="$PROJECT_DIR$/Trigger Word Detection/generate_data/train17.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Trigger Word Detection/generate_data/train18.wav" beforeDir="false" afterPath="$PROJECT_DIR$/Trigger Word Detection/generate_data/train18.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Trigger Word Detection/generate_data/train19.wav" beforeDir="false" afterPath="$PROJECT_DIR$/Trigger Word Detection/generate_data/train19.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Trigger Word Detection/generate_data/train2.wav" beforeDir="false" afterPath="$PROJECT_DIR$/Trigger Word Detection/generate_data/train2.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Trigger Word Detection/generate_data/train3.wav" beforeDir="false" afterPath="$PROJECT_DIR$/Trigger Word Detection/generate_data/train3.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Trigger Word Detection/generate_data/train4.wav" beforeDir="false" afterPath="$PROJECT_DIR$/Trigger Word Detection/generate_data/train4.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Trigger Word Detection/generate_data/train5.wav" beforeDir="false" afterPath="$PROJECT_DIR$/Trigger Word Detection/generate_data/train5.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Trigger Word Detection/generate_data/train6.wav" beforeDir="false" afterPath="$PROJECT_DIR$/Trigger Word Detection/generate_data/train6.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Trigger Word Detection/generate_data/train7.wav" beforeDir="false" afterPath="$PROJECT_DIR$/Trigger Word Detection/generate_data/train7.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Trigger Word Detection/generate_data/train8.wav" beforeDir="false" afterPath="$PROJECT_DIR$/Trigger Word Detection/generate_data/train8.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Trigger Word Detection/generate_data/train9.wav" beforeDir="false" afterPath="$PROJECT_DIR$/Trigger Word Detection/generate_data/train9.wav" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Trigger Word Detection/generate_train_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/Trigger Word Detection/generate_train_data.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -111,22 +158,22 @@
       <screen x="0" y="0" width="1642" height="1067" />
     </state>
     <state x="1091" y="518" key="FileChooserDialogImpl/0.0.1642.1067@0.0.1642.1067" timestamp="1594294774646" />
-    <state width="799" height="376" key="GridCell.Tab.0.bottom" timestamp="1594298414076">
+    <state width="799" height="177" key="GridCell.Tab.0.bottom" timestamp="1594299089193">
       <screen x="0" y="0" width="1642" height="1067" />
     </state>
-    <state width="799" height="376" key="GridCell.Tab.0.bottom/0.0.1642.1067@0.0.1642.1067" timestamp="1594298414076" />
-    <state width="799" height="376" key="GridCell.Tab.0.center" timestamp="1594298414076">
+    <state width="799" height="177" key="GridCell.Tab.0.bottom/0.0.1642.1067@0.0.1642.1067" timestamp="1594299089193" />
+    <state width="799" height="177" key="GridCell.Tab.0.center" timestamp="1594299089193">
       <screen x="0" y="0" width="1642" height="1067" />
     </state>
-    <state width="799" height="376" key="GridCell.Tab.0.center/0.0.1642.1067@0.0.1642.1067" timestamp="1594298414076" />
-    <state width="799" height="376" key="GridCell.Tab.0.left" timestamp="1594298414076">
+    <state width="799" height="177" key="GridCell.Tab.0.center/0.0.1642.1067@0.0.1642.1067" timestamp="1594299089193" />
+    <state width="799" height="177" key="GridCell.Tab.0.left" timestamp="1594299089193">
       <screen x="0" y="0" width="1642" height="1067" />
     </state>
-    <state width="799" height="376" key="GridCell.Tab.0.left/0.0.1642.1067@0.0.1642.1067" timestamp="1594298414076" />
-    <state width="799" height="376" key="GridCell.Tab.0.right" timestamp="1594298414076">
+    <state width="799" height="177" key="GridCell.Tab.0.left/0.0.1642.1067@0.0.1642.1067" timestamp="1594299089193" />
+    <state width="799" height="177" key="GridCell.Tab.0.right" timestamp="1594299089193">
       <screen x="0" y="0" width="1642" height="1067" />
     </state>
-    <state width="799" height="376" key="GridCell.Tab.0.right/0.0.1642.1067@0.0.1642.1067" timestamp="1594298414076" />
+    <state width="799" height="177" key="GridCell.Tab.0.right/0.0.1642.1067@0.0.1642.1067" timestamp="1594299089193" />
     <state x="646" y="179" key="SettingsEditor" timestamp="1594274453268">
       <screen x="0" y="0" width="1642" height="1067" />
     </state>

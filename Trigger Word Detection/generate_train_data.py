@@ -124,7 +124,7 @@ def insert_ones(Ty, y, segment_end_ms):
     return y
 
 
-def create_training_example(Ty, backgrounds, activates, negatives, file_num):
+def create_training_example(Ty, backgrounds, activates, negatives, file_name_added):
     """
     Creates a training example with a given background, activates, and negatives.
 
@@ -141,7 +141,7 @@ def create_training_example(Ty, backgrounds, activates, negatives, file_num):
     # Set the random seed
     # np.random.seed(18) ^^ 너때문에 random은 커녕 계속 같은 값이 나오잖니?
 
-    print("file num:", file_num)
+    print("file num:", file_name_added)
     # Step 1: Initialize y (label vector) of zeros (≈ 1 line)
     y = np.zeros((1, Ty))
 
@@ -184,7 +184,7 @@ def create_training_example(Ty, backgrounds, activates, negatives, file_num):
     background = match_target_amplitude(background, -20.0)  # ★
 
     # Export new training example
-    file_name = "./generate_data/train" + str(file_num) + ".wav"
+    file_name = "./generate_data/train" + str(file_name_added) + ".wav"
     file_handle = background.export(file_name, format="wav")
     print("File was saved in ./generate_data directory.")
 
@@ -213,3 +213,31 @@ def create_training_examples(Ty, num_new_data):
     np.save(file='./XY_train/Y_train.npy', arr=Y)
 
     print("The end of making # of", num_new_data, "new training audios")
+
+
+def create_test_examples(Ty): # , num_new_data):
+    """
+    It creates the whole training data
+    and saves it in X.npy and Y.npy.
+    """
+
+    '''    
+    for i in range(num_new_data):     
+    x, y = create_training_example(Ty, backgrounds, activates, negatives, i)
+    X.append(x.T)    
+    Y.append(y.T)
+    '''
+    # Load audio segments
+    activates, negatives, backgrounds = load_raw_audio()
+    X = []
+    Y = []
+
+    x, y = create_training_example(Ty, backgrounds, activates, negatives, "test")
+    X.append(x.T)
+    Y.append(y.T)
+    X = np.array(X)
+    Y = np.array(Y)
+    np.save(file='./XY_test/X_test.npy', arr=X)
+    np.save(file='./XY_test/Y_test.npy', arr=Y)
+
+    print("The end of making new test audios")
